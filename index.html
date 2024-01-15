@@ -12,6 +12,7 @@
     .md1{display: flex;justify-content: center;}
     .big_name1,.big_name2,.b_big,.one{position: absolute;}
     .one{top: -20%;}
+    .b_big>span{border-radius: 20px;padding-left: 10px;padding-right: 10px;}
     @keyframes s_one {
         0%{box-shadow: 0px 0px 15px 15px orange;}
         100%{box-shadow: 0px 0px 30px 30px orange;}
@@ -24,93 +25,98 @@
         0%{box-shadow: 0px 0px 20px 20px orange;}
         100%{box-shadow: 0px 0px 55px 55px orange;}
     }
+    .nav-link{color: black;}
     .md2{display: flex;justify-content: flex-start;align-content: center;align-items: center;}
     .md21,.md22,.md23{position: absolute;}
-    @media screen and (max-width:1079px) {
-        /* .one{background-color: blue;
-        width: 70%;
-        height: 410px;
-        transition: all;
-        animation-name: s_one;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        } */
+    .nav-item{display: flex;align-items: center;}
+    .dot1{width: 5px;height: 5px;background-color: red;color: red; border-radius: 50%;}
+    .dot1:hover{box-shadow: 0px 0px 2px 2px red; transition: all;transform-origin: 1s;}
+    .dot2{width: 5px;height: 5px;background-color: darkblue;color: darkblue; border-radius: 50%; }
+    .dot2:hover{box-shadow: 0px 0px 2px 2px navy; transition: all;transform-origin: 1s;}
+    .dot3{width: 5px;height: 5px;background-color: darkmagenta;color: darkmagenta; border-radius: 50%; }
+    .dot3:hover{box-shadow: 0px 0px 2px 2px darkmagenta; transition: all;transform-origin: 1s;}
+    .dot4{width: 5px;height: 5px;background-color: darkgreen;color: darkgreen; border-radius: 50%; }
+    .dot4:hover{box-shadow: 0px 0px 2px 2px darkgreen; transition: all;transform-origin: 1s;}
+    
+    @media screen and (max-width:575px) {
+        nav{width: 90%;box-shadow: 0px 0px 4px 1px black;}
         .navbar{border-radius: 30px;}
+        .nav-link{font-size: 180%;}
         .big_name1{font-size: 200%;top:13%}
         .big_name2{font-size: 200%;top:17%}
         .b_big{font-size: 70%; top:24%}
-        /* .md21,.md22,.md23{top: 28%;} */ 
         .md21{top: 33%;left: 0%;}
         .md23{top: 50%;left: 25%;}
         .md21>video{width: 100%; border-radius: 20px;}
         .md21>video:hover{opacity: 0.3;background-color: white;}
+        .navbar-collapse{background-image: linear-gradient(white,orange); padding: 10px;}
         
     }
-    /* @media screen and (min-width:576px) and (max-width:767px) {
-        .one{background-color: rgb(212, 255, 0);
-        width: 70%;
-        height: 600px;
-        transition: all;
-        animation-name: m_one;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        }
+    @media screen and (min-width:576px) and (max-width:1100px) {
         .big_name1{font-size: 300%;top:40%}
         .big_name2{font-size: 300%;top:50%}
         .b_big{font-size: 70%; top:24%}
         .b_big{font-size: 80%; top:70%}
         .md21,.md22,.md23{top:75%;}
-    } */
-    @media screen and (min-width:1080px) {
-        .one{background-color: rgb(0, 255, 85);
-        width: 70%;
+        /* .nav-link{font-size: 400%;} */
+    }
+    @media screen and (min-width:1099px) {
+        nav{width: 80%;box-shadow: 0px 0px 4px 1px black;}
+        .nav-link{font-weight: bold;font-size: 120%;}
+        .dot1{margin-left: 180px;}
+        .dot2,.dot3,.dot4{margin-left: 20px;}
+        .dot5{margin-left: 100px;}
+        .dot6{background-color: orange;border-radius: 30px;margin-left: 40px;}
+        .one{background-color: white;
+        width: 60%;
         height: 800px;
         transition: all;
         animation-name: l_one;
         animation-duration: 3s;
         animation-iteration-count: infinite;
         }
-        .big_name1{font-size: 450%;top:30%}
-        .big_name2{font-size: 450%;top:50%}
+        .big_name1{font-size: 700%;top:30%}
+        .big_name2{font-size: 700%;top:50%}
         .b_big{font-size: 130%; top:75%} 
         .navbar{border-radius: 30px;}
         .md21{top: 105%;right: -10%;}
         .md23{top: 180%;left: 40%;}
         .md21>video{width: 80%; border-radius: 20px;}
         .md21>video:hover{opacity: 0.3;background-color: white;}
-        /* .bgw{background-color: rgba(226, 12, 12, 0.51);height: 360px;width: 700px; border-radius: 20px;} */
+        
     }
     
   </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top mt-2">
+    <nav class="navbar navbar-expand-sm bg-white navbar-dark fixed-top mx-auto mt-2 ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./icon.png" width="20px" height="25px"/></a>
+          <a class="navbar-brand" href="#" style="color: black;"><img src="./icon.png" width="20px" height="25px"/>mymind<sup>TM</sup></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon" style="border-radius: 10px; background-color: grey;height: 25px;padding: 5%;"></span>
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item">
-                  <a class="nav-link black" href="#">mymind<sup>TM</sup></a>
+                <div class="dot1"></div>
+                  <a class="nav-link " href="#">What</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link black " href="#">What</a>
-              </li>
-              <li class="nav-item">
+                <div class="dot2"></div>
                 <a class="nav-link" href="#">Why</a>
               </li>   
               <li class="nav-item">
+                <div class="dot3"></div>
                   <a class="nav-link" href="#">How</a>
                 </li>
                 <li class="nav-item">
+                    <div class="dot4"></div>
                   <a class="nav-link" href="#">What's new</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item dot5">
                   <a class="nav-link" href="#">Login</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item dot6">
                   <a class="nav-link" href="#">SignUP</a>
                 </li> 
             </ul>
@@ -119,8 +125,8 @@
       </nav>
     <div class="md1">
         <div class="one"></div>
-    <h1 class="big_name1">Remember everything.</h1>
-    <h1 class="big_name2">Organise nothing.</h1>
+    <h1 class="big_name1 display-3">Remember everything.</h1>
+    <h1 class="big_name2 display-3">Organise nothing.</h1>
     <div class="b_big" style="text-align: center;">All your <span style="color: orange; border: 1px solid orange;">Notes</span> <span style="color: rgb(226, 111, 130);border: 1px solid rgb(226, 111, 130);">Bookmarks</span> <span style="color: skyblue;border: 1px solid skyblue;">inspiration</span><br><br> <span style="color: red; border: 1px solid red;">articles</span> and <span style="color: rgb(137, 137, 0);border: 1px solid rgb(178, 178, 6);">images</span> in one single private place</div>
     </div>
     <div class="md2">
@@ -189,6 +195,5 @@
     <br><br><br>
 </body>
 </html>
-
 
 
