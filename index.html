@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .nav-link:hover{color: orangered;border-radius: 20px !important;}
+    .one{border-radius: 50%;}
+    .md1{display: flex;justify-content: center;}
+    .big_name1,.big_name2,.b_big,.one{position: absolute;}
+    .one{top: -20%;}
+    .big_name1{top: 30%;}
+    .big_name2{top: 40%;}
+    .b_big{top: 55%;}
+    @keyframes s_one {
+        0%{box-shadow: 0px 0px 20px 20px orangered;}
+        100%{box-shadow: 0px 0px 30px 30px orangered;}
+    }
+    @keyframes m_one {
+        0%{box-shadow: 0px 0px 25px 25px orangered;}
+        100%{box-shadow: 0px 0px 45px 45px orangered;}
+    }
+    @keyframes l_one {
+        0%{box-shadow: 0px 0px 35px 35px orangered;}
+        100%{box-shadow: 0px 0px 55px 55px orangered;}
+    }
+    @media screen and (min-width:375px) and (max-width:575px) {
+        .one{background-color: blue;
+        width: 70%;
+        height: 410px;
+        transition: all;
+        animation-name: s_one;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        }
+        .big_name1,.big_name2{font-size: 200%;}
+        .b_big{font-size: 70%; top:60%}
+        
+    }
+    @media screen and (min-width:576px) and (max-width:767px) {
+        .one{background-color: rgb(212, 255, 0);
+        width: 70%;
+        height: 600px;
+        transition: all;
+        animation-name: m_one;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        }
+        .big_name1,.big_name2{font-size: 300%;}
+        .big_name2{top: 50%;}
+        .b_big{font-size: 80%; top:70%}
+    }
+    @media screen and (min-width:768px) {
+        .one{background-color: rgb(0, 255, 85);
+        width: 70%;
+        height: 800px;
+        transition: all;
+        animation-name: l_one;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        }
+        .big_name1,.big_name2{font-size: 450%;}
+        .big_name2{top: 55%;}
+        .b_big{font-size: 130%; top:80%} 
+    }
+    
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top mt-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./icon.png" width="20px" height="25px"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link black" href="#">mymind<sup>TM</sup></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link black " href="#">What</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Why</a>
+              </li>   
+              <li class="nav-item">
+                  <a class="nav-link" href="#">How</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">What's new</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SignUP</a>
+                </li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="md1">
+        <div class="one"></div>
+    <h1 class="big_name1">Remember everything.</h1>
+    <h1 class="big_name2">Organise nothing.</h1>
+    <div class="b_big" style="font-size: ; top: ;text-align: center;">All your <span style="color: orange; border: 1px solid orange;">Notes</span> <span style="color: rgb(226, 111, 130);border: 1px solid rgb(226, 111, 130);">Bookmarks</span> <span style="color: skyblue;border: 1px solid skyblue;">inspiration</span><br><br> <span style="color: red; border: 1px solid red;">articles</span> and <span style="color: rgb(137, 137, 0);border: 1px solid rgb(178, 178, 6);">images</span> in one single private place</div>
+  
+    </div>
+</body>
+</html>
+
+
