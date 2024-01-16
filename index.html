@@ -6,28 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./one.css" />
   <style>
     .nav-link:hover{color: orangered;border-radius: 20px !important;}
     .one{border-radius: 50%;}
-    .md1{display: flex;justify-content: center;}
-    /* .big_name1,.big_name2,.b_big,.one{position: absolute;} */
     .one{top: -70%;}
-    /* .b_big>span{border-radius: 20px;padding-left: 10px;padding-right: 10px;} */
-    @keyframes s_one {
-        0%{box-shadow: 0px 0px 15px 15px orange;}
-        100%{box-shadow: 0px 0px 30px 30px orange;}
-    }
-    @keyframes m_one {
-        0%{box-shadow: 0px 0px 15px 15px orange;}
-        100%{box-shadow: 0px 0px 45px 45px orange;}
-    }
-    @keyframes l_one {
-        0%{box-shadow: 0px 0px 20px 20px orange;}
-        100%{box-shadow: 0px 0px 55px 55px orange;}
-    }
     .nav-link{color: black;}
-    .md2{display: flex;justify-content: flex-start;align-content: center;align-items: center;}
-    .md21,.md22,.md23{position: absolute;}
     .nav-item{display: flex;align-items: center;}
     .dot1{width: 5px;height: 5px;background-color: red;color: red; border-radius: 50%;}
     .dot1:hover{box-shadow: 0px 0px 2px 2px red; transition: all;transform-origin: 1s;}
@@ -37,145 +21,10 @@
     .dot3:hover{box-shadow: 0px 0px 2px 2px darkmagenta; transition: all;transform-origin: 1s;}
     .dot4{width: 5px;height: 5px;background-color: darkgreen;color: darkgreen; border-radius: 50%; }
     .dot4:hover{box-shadow: 0px 0px 2px 2px darkgreen; transition: all;transform-origin: 1s;}
-    
-    @media screen and (max-width:575px) {
-        nav{width: 90%;box-shadow: 0px 0px 4px 1px black;}
-        .navbar{border-radius: 30px;}
-        .nav-link{font-size: 180%;}
-        .big_name1{font-size: 200%;top:13%}
-        .big_name2{font-size: 200%;top:17%}
-        .b_big{font-size: 70%; top:24%}
-        .md21{top: 33%;left: 0%;}
-        .md23{top: 50%;left: 25%;}
-        .md21>video{width: 100%; border-radius: 20px;}
-        .md21>video:hover{opacity: 0.3;background-color: white;}
-        .navbar-collapse{background-image: linear-gradient(white,orange); padding: 10px;}
-        
-    }
-    @media screen and (min-width:576px) and (max-width:1100px) {
-        nav{width: 80%;box-shadow: 0px 0px 4px 1px rgba(120, 178, 254, 0.368);border-radius: 30px;}
-        .nav-link{font-weight: bold;font-size: 120%;}
-        .dot1{margin-left: 180px;}
-        .dot2,.dot3,.dot4{margin-left: 20px;}
-        .dot5{margin-left: 100px;}
-        .dot6{background-color: orange;border-radius: 30px;margin-left: 40px;}
-        .big_name1{font-size: 300%;top:40%}
-        .big_name2{font-size: 300%;top:50%}
-        .b_big{font-size: 70%; top:24%}
-        .b_big{font-size: 80%; top:70%}
-        .md21,.md22,.md23{top:75%;}
-        /* .nav-link{font-size: 400%;} */
-    }
-    @media screen and (min-width:1099px) {
-        nav{width: 80%;box-shadow: 0px 0px 4px 1px rgba(120, 178, 254, 0.368);}
-        .nav-link{font-weight: bold;font-size: 120%;}
-        .dot1{margin-left: 180px;}
-        .dot2,.dot3,.dot4{margin-left: 20px;}
-        .dot5{margin-left: 100px;}
-        .dot6{background-color: orange;border-radius: 30px;margin-left: 40px;}
-        .one{background-color: white;
-        width: 60%;
-        height: 800px;
-        transition: all;
-        animation-name: l_one;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        }
-        .big_name1{font-size: 700%;}
-        .big_name2{font-size: 700%;}
-        .b_big{font-size: 130%; } 
-        .navbar{border-radius: 30px;}
-        .md21>video{width: 80%; border-radius: 20px;}
-        .md21>video:hover{opacity: 0.3;background-color: white;}
-        .md4{background-image: url("./bg1.jpg");width: 100%; height: auto; width: 100%;font-size: 350%;}
-        .md41 span{color: orangered;}
-        .md,.md1,.md2,.md3,.md4{display: flex;flex-flow: column wrap;row-gap: 100px;justify-content: center;align-items: center;margin-top: 300px;}
-        .one{margin-top: -30%;}
-        .big_name1{margin-top: -140%;}
-        .big_name2{margin-top: -10%;}
-        .b_big{margin-top: -5%;}
-        .b_big span{border-radius: 20px; padding-left: 5px; padding-right: 5px;}
-        .md2{margin-top: -30%;width: 80%;margin-left: 15%;}
-        .md3{margin-top: 10%;}
-        .md31>div{margin-left: 30%;}
-        .md4{
-            background-image: url("./bg1.jpg");
-            background-position: bottom;
-            background-repeat: no-repeat;
-            background-size: 200%;
-            margin-top: 10%;
-        }
-        .md5{
-            width: 80%;
-            font-size: 550%;
-            text-align: center;
-        }
-        .md6{
-            width: 30%;
-            font-size: 150%;
-            text-align: center;
-        }
-        .md7>video,.md93>video{
-            width: 100%;
-        }
-        .md8 span:hover{color: orange;}
-        .md91{font-size: 500%;text-align: center;}
-        .md92{font-size: 150%; text-align: center;}
-        .md10{
-            text-align: center;
-            background-color: orangered;
-            width: 100%;
-            padding: 50px;
-        }
-        .md101{
-            font-size: 400%;
-            width: 90%;
-            margin-left: 5%;
-            font-weight: bolder;
-            /* text-align: center; */
-        }
-        .md102{
-            font-size: 130%;
-            text-align: center;
-            color: white;
-            width: 50%;
-            margin-left: 25%;
-        }
-        .md104 video{
-            width: 100%;
-        }
-        .md105_1{
-            font-size: 400%;
-            width: 80%;
-            text-align: center;
-            margin-left: 10%;
-        }
-        .md105{
-            width: 94%;
-            margin-left: 2%;
-            background-color: white;
-            align-items: center;
-            display: grid;
-            grid-template-columns: auto auto;
-            row-gap: 30px;
-            column-gap: -30px;
-        }
-        .g1{width: 90%;margin-left: 5%; grid-column-start: 1;grid-column-end: 3;}
-        .g2{grid-area: 2/1/3/2;}
-        .g2 img{width: 50%; border-radius: 20px;}
-        .g3{grid-area: 2/2/3/3;}
-        .g3 img{width: 40%; border-radius: 20px;}
-        .g4{grid-area: 3/1/4/2;}
-        .g4 img{width: 40%; border-radius: 20px;}
-        .g5{grid-area: 3/2/4/3;}
-        .g5{width: 40%; border-radius: 20px;}
 
-    }
-    
   </style>
 </head>
 <body>
-  <!-- navbar navbar-expand-lg navbar-light bg-white fixed-top -->
     <nav class="navbar navbar-expand-lg bg-white navbar-dark fixed-top mx-auto mt-2 ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#" style="color: black;"><img src="./icon.png" width="20px" height="25px"/>mymind<sup>TM</sup></a>
@@ -223,34 +72,7 @@
                     <source src="./vdo1.mp4" style="text-align: center;"/>
                 </video>
             </div>
-            <div class="md22">
-                <div class="container mt-3">  
-                    <button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#myModal1">
-                              <div class="bgw"></div>
-                    </button>
-                  </div>
-                  
-                  <!-- The Modal -->
-                  <div class="modal" id="myModal1">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                  
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                  
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            <iframe width="720" height="330" src="https://www.youtube.com/embed/BM39sNvswNM?si=-GL2-lm-atxGZhCu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-            </div>
+            
             <div class="md23">
                 <div class="container mt-3">  
                     <button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#myModal1">
@@ -285,8 +107,8 @@
             <div class="md31">
                 <h5 style="text-align: center;">OUR MANIFESTO</h5><br><br><br>
                 <div style="width: 40%;text-align: justify;font-size: 200%;">
-                <p><span style="font-size: 300%; font-style: italic;">In</span> a time when every company has a bid on our data, when we exchange our privacy for information, when every move we make is influenced by how others will perceive it, we have little space to call our own.<br><br>            
-                Our minds have been taken captive <br><br>
+                <p><span style="font-style: italic;">In</span> a time when every company has a bid on our data, when we exchange our privacy for information, when every move we make is influenced by how others will perceive it, we have little space to call our own.<br><br>            
+                Our minds have been taken captive <br>
                 by social approval systems, by newsfeeds and timelines, by advertisements and corporate agendas. Our information is scattered across platforms, bound by terms and conditions.<br><br>
                 What should have never been lost is now yours again. <b>We promise:</b></p>
             </div>
