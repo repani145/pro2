@@ -10,9 +10,9 @@
     .nav-link:hover{color: orangered;border-radius: 20px !important;}
     .one{border-radius: 50%;}
     .md1{display: flex;justify-content: center;}
-    .big_name1,.big_name2,.b_big,.one{position: absolute;}
-    .one{top: -20%;}
-    .b_big>span{border-radius: 20px;padding-left: 10px;padding-right: 10px;}
+    /* .big_name1,.big_name2,.b_big,.one{position: absolute;} */
+    .one{top: -70%;}
+    /* .b_big>span{border-radius: 20px;padding-left: 10px;padding-right: 10px;} */
     @keyframes s_one {
         0%{box-shadow: 0px 0px 15px 15px orange;}
         100%{box-shadow: 0px 0px 30px 30px orange;}
@@ -81,23 +81,95 @@
         animation-duration: 3s;
         animation-iteration-count: infinite;
         }
-        .big_name1{font-size: 700%;top:30%}
-        .big_name2{font-size: 700%;top:50%}
-        .b_big{font-size: 130%; top:75%} 
+        .big_name1{font-size: 700%;}
+        .big_name2{font-size: 700%;}
+        .b_big{font-size: 130%; } 
         .navbar{border-radius: 30px;}
-        .md21{top: 105%;right: -10%;}
-        .md23{top: 180%;left: 40%;}
         .md21>video{width: 80%; border-radius: 20px;}
         .md21>video:hover{opacity: 0.3;background-color: white;}
-        .md3{position: absolute;top: 200%;}
-        .md31{display: flex;flex-wrap: wrap;flex-direction: column;align-content: center;}
-        /* .md41{
-            background-image: url(./bg1.jpg);background-position: center; position: absolute;top: 450%;left: ; border: 2px dotted blue;
-        } */
-        /* .md4 p{font-size: 350%;width: auto;height: auto;} */
-        /* .md4{display: grid;justify-content: center;grid-template-columns: auto;column-gap: 30px;} */
-        .md4{background-image: url("./bg1.jpg");width: 100%; height: auto; display: flex;width: 100%;justify-content: center;margin-top: 200%;font-size: 350%;}
+        .md4{background-image: url("./bg1.jpg");width: 100%; height: auto; width: 100%;font-size: 350%;}
         .md41 span{color: orangered;}
+        .md,.md1,.md2,.md3,.md4{display: flex;flex-flow: column wrap;row-gap: 100px;justify-content: center;align-items: center;margin-top: 300px;}
+        .one{margin-top: -30%;}
+        .big_name1{margin-top: -140%;}
+        .big_name2{margin-top: -10%;}
+        .b_big{margin-top: -5%;}
+        .b_big span{border-radius: 20px; padding-left: 5px; padding-right: 5px;}
+        .md2{margin-top: -30%;width: 80%;margin-left: 15%;}
+        .md3{margin-top: 10%;}
+        .md31>div{margin-left: 30%;}
+        .md4{
+            background-image: url("./bg1.jpg");
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: 200%;
+            margin-top: 10%;
+        }
+        .md5{
+            width: 80%;
+            font-size: 550%;
+            text-align: center;
+        }
+        .md6{
+            width: 30%;
+            font-size: 150%;
+            text-align: center;
+        }
+        .md7>video,.md93>video{
+            width: 100%;
+        }
+        .md8 span:hover{color: orange;}
+        .md91{font-size: 500%;text-align: center;}
+        .md92{font-size: 150%; text-align: center;}
+        .md10{
+            text-align: center;
+            background-color: orangered;
+            width: 100%;
+            padding: 50px;
+        }
+        .md101{
+            font-size: 400%;
+            width: 90%;
+            margin-left: 5%;
+            font-weight: bolder;
+            /* text-align: center; */
+        }
+        .md102{
+            font-size: 130%;
+            text-align: center;
+            color: white;
+            width: 50%;
+            margin-left: 25%;
+        }
+        .md104 video{
+            width: 100%;
+        }
+        .md105_1{
+            font-size: 400%;
+            width: 80%;
+            text-align: center;
+            margin-left: 10%;
+        }
+        .md105{
+            width: 94%;
+            margin-left: 2%;
+            background-color: white;
+            align-items: center;
+            display: grid;
+            grid-template-columns: auto auto;
+            row-gap: 30px;
+            column-gap: -30px;
+        }
+        .g1{width: 90%;margin-left: 5%; grid-column-start: 1;grid-column-end: 3;}
+        .g2{grid-area: 2/1/3/2;}
+        .g2 img{width: 50%; border-radius: 20px;}
+        .g3{grid-area: 2/2/3/3;}
+        .g3 img{width: 40%; border-radius: 20px;}
+        .g4{grid-area: 3/1/4/2;}
+        .g4 img{width: 40%; border-radius: 20px;}
+        .g5{grid-area: 3/2/4/3;}
+        .g5{width: 40%; border-radius: 20px;}
+
     }
     
   </style>
@@ -138,25 +210,118 @@
           </div>
         </div>
       </nav>
-    <div class="md1">
+    <div class="md">
         <div class="one"></div>
-    <h1 class="big_name1 display-3">Remember everything.</h1>
-    <h1 class="big_name2 display-3">Organise nothing.</h1>
-    <div class="b_big" style="text-align: center;">All your <span style="color: orange; border: 1px solid orange;">Notes</span> <span style="color: rgb(226, 111, 130);border: 1px solid rgb(226, 111, 130);">Bookmarks</span> <span style="color: skyblue;border: 1px solid skyblue;">inspiration</span><br><br> <span style="color: red; border: 1px solid red;">articles</span> and <span style="color: rgb(137, 137, 0);border: 1px solid rgb(178, 178, 6);">images</span> in one single private place</div>
-    </div>
-    <div class="md2">
-        <div class="md21">
+        <div class="md1">
+        <div class="big_name1 display-3">Remember everything.</div>
+        <div class="big_name2 display-3">Organise nothing.</div>
+        <div class="b_big" style="text-align: center;">All your <span style="color: orange; border: 1px solid orange;">Notes</span> <span style="color: rgb(226, 111, 130);border: 1px solid rgb(226, 111, 130);">Bookmarks</span> <span style="color: skyblue;border: 1px solid skyblue;">inspiration</span><br><br> <span style="color: red; border: 1px solid red;">articles</span> and <span style="color: rgb(137, 137, 0);border: 1px solid rgb(178, 178, 6);">images</span> in one single private place</div>
+        </div>
+        <div class="md2">
+            <div class="md21">
+                <video muted autoplay>
+                    <source src="./vdo1.mp4" style="text-align: center;"/>
+                </video>
+            </div>
+            <div class="md22">
+                <div class="container mt-3">  
+                    <button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#myModal1">
+                              <div class="bgw"></div>
+                    </button>
+                  </div>
+                  
+                  <!-- The Modal -->
+                  <div class="modal" id="myModal1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <iframe width="720" height="330" src="https://www.youtube.com/embed/BM39sNvswNM?si=-GL2-lm-atxGZhCu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            <div class="md23">
+                <div class="container mt-3">  
+                    <button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#myModal1">
+                    <h3>watch the intro</h3>
+                    </button>
+                  </div>
+                  
+                  <!-- The Modal -->
+                  <div class="modal" id="myModal1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <iframe width="720" height="330" src="https://www.youtube.com/embed/BM39sNvswNM?si=-GL2-lm-atxGZhCu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+        </div><br>
+        <div class="md3">
+            <br><br><br><br><br>
+            <div class="md31">
+                <h5 style="text-align: center;">OUR MANIFESTO</h5><br><br><br>
+                <div style="width: 40%;text-align: justify;font-size: 200%;">
+                <p><span style="font-size: 300%; font-style: italic;">In</span> a time when every company has a bid on our data, when we exchange our privacy for information, when every move we make is influenced by how others will perceive it, we have little space to call our own.<br><br>            
+                Our minds have been taken captive <br><br>
+                by social approval systems, by newsfeeds and timelines, by advertisements and corporate agendas. Our information is scattered across platforms, bound by terms and conditions.<br><br>
+                What should have never been lost is now yours again. <b>We promise:</b></p>
+            </div>
+            </div>
+        </div>
+        <div class="md4">
+            <div class="md41">
+            <p><span>NO</span>&nbsp;social features</p>
+            <p><span>NO</span>&nbsp;vanity metrics</p>
+            <p><span>NO</span>&nbsp;tracking</p>
+            <p><span>NO</span>&nbsp;social pressure</p>
+            <p><span>NO</span>&nbsp;collaboration</p>
+            <p><span>NO</span>&nbsp;ads</p>
+            </div>
+            <div style="text-align: center; width: 100%;height: 200%;"><img class="md5" src="./newmymind_type.svg"/>
+            <br><br><br><div style="font-size: 50%; "><a href="#" style="text-decoration: none;color: white;background-color: red; border-radius: 20px;padding: 5px;">TRY IT OUT &gt;</a></div>
+                <br><br>
+        </div>
+        </div>
+        <div class="md5">The first and only extension
+            for your real mind.</div>
+        <div class="md6">One place for everything you care about.
+                No need to file it, label or even tag it. It’s all
+                magically organized and visualized for you</div>
+        <div class="md7">
             <video muted autoplay>
-                <source src="./vdo1.mp4" style="text-align: center;"/>
+                <source src="./vdo2.mov" />
             </video>
         </div>
-        <div class="md22">
+        <div class="md8">
             <div class="container mt-3">  
                 <button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#myModal1">
-                          <div class="bgw"></div>
+                          <img src="./vid_button_icon.svg"/><span>SEE THE MAGIC OF SMART BOOKMARKING</span>
                 </button>
               </div>
-              
               <!-- The Modal -->
               <div class="modal" id="myModal1">
                 <div class="modal-dialog modal-lg">
@@ -171,65 +336,85 @@
                     <div class="modal-body">
                         <iframe width="720" height="330" src="https://www.youtube.com/embed/BM39sNvswNM?si=-GL2-lm-atxGZhCu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
                     </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    </div>
+                    
                   </div>
                 </div>
         </div>
-        <div class="md23">
-            <div class="container mt-3">  
-                <button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#myModal1">
-                <h3>watch the intro</h3>
-                </button>
-              </div>
-              
-              <!-- The Modal -->
-              <div class="modal" id="myModal1">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-              
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <div class="md9">
+            <div style="text-align: center;">IT JUST WORKS</div>
+            <div class="md91 display-3">Just save it. Artificial<br>
+                Intelligence AI takes<br>
+                care of the rest.</div>
+            <div class="md92"><br><br>
+                Save anything with a click and stay in the flow.<br>
+                mymind understands what it is and remembers<br>
+                the important details, so you don't have to.
+            </div>
+            <div class="md93">
+                <video muted autoplay>
+                    <source src="./vdo3.webm" />
+                </video>
+            </div>
+        </div>
+        <div class="md10">
+            <div style="text-align: center;">NO WASTED TIME OR ENERGY</div>
+            <br><br>
+            <div class="md101 display-3">
+                Folders are dead. This is your<br> personal search engine.
+            </div><br><br>
+            <div class="md102">
+                Search by color, keyword, brand, date – whatever
+                you think of first. Associative search & visual cues work
+                with your brain to find it instantly.
+            </div>
+            <div class="md103">
+                <div class="">
+                    <div class="container mt-3">  
+                        <button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#myModal1">
+                                  <div><img src="./VIDEO_button2.svg"/>WATCH THIS VIDEO</div>
+                        </button>
+                      </div>
+                      <!-- The Modal -->
+                      <div class="modal" id="myModal1">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <iframe width="720" height="330" src="https://www.youtube.com/embed/BM39sNvswNM?si=-GL2-lm-atxGZhCu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+            </div>
+            <div class="md104">
+                <video muted autoplay>
+                    <source src="./vdo4.webm"/>
+                </video>
+            </div>
+            <div class="md105">
+                <div class="g1">
+                    <h6 style="color: orangered; text-align: center;font-weight: bold;">YOUR PRIVATE OASIS</h6>
+                    <div class="md105_1 display-3">
+                        A treasure trove of ideas,
+                        inspiration & references
                     </div>
-              
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <iframe width="720" height="330" src="https://www.youtube.com/embed/BM39sNvswNM?si=-GL2-lm-atxGZhCu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
                 </div>
-        </div>
-    </div><br>
-    <div class="md3">
-        <br><br><br><br><br>
-        <div class="md31">
-            <h5 style="text-align: center;">OUR MANIFESTO</h5><br><br><br>
-            <div style="width: 40%;text-align: justify;font-size: 200%;">
-            <p><span style="font-size: 300%; font-style: italic;">In</span> a time when every company has a bid on our data, when we exchange our privacy for information, when every move we make is influenced by how others will perceive it, we have little space to call our own.<br><br>            
-            Our minds have been taken captive <br><br>
-            by social approval systems, by newsfeeds and timelines, by advertisements and corporate agendas. Our information is scattered across platforms, bound by terms and conditions.<br><br>
-            What should have never been lost is now yours again. <b>We promise:</b></p>
-        </div>
+                <div class="g2"><a href="#"><img src="./g1.webp"/></a></div>
+                <div class="g3"><a href="#"><img src="./g2.webp"/></a></div>
+                <div class="g3"><a href="#"><img src="./g3.webp"/></a></div>
+                <div class="g4"><a href="#"><img src="./g4.webp"/></a></div>
+            </div>
         </div>
     </div>
-    <div class="md4">
-        <div class="md41">
-        <p><span>NO</span>&nbsp;social features</p>
-        <p><span>NO</span>&nbsp;vanity metrics</p>
-        <p><span>NO</span>&nbsp;tracking</p>
-        <p><span>NO</span>&nbsp;social pressure</p>
-        <p><span>NO</span>&nbsp;collaboration</p>
-        <p><span>NO</span>&nbsp;ads</p>
-        </div>
-    </div>
-    <img src="./newmymind_type.svg"/>
 </body>
 </html>
 
